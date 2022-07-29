@@ -8,15 +8,11 @@
 <body>
 
 
-<script src="js-yaml.min.js"></script>
-
 <script type="module">
 
-Promise.all([
-    fetch("./data.yaml").then(x => x.text())
-]).then(([yaml]) => {
-
-    var data = jsyaml.load(yaml);
+fetch("./data.json")
+     .then((res) => res.json())
+     .then((data) => {
 
     var tables = "";
     var total_price = 0;

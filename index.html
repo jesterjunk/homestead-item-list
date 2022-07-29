@@ -15,6 +15,7 @@ fetch("./data.json")
     .then((data) => {
 
     var tables = "";
+    var total_price = 0;
 
     Object.keys(data).forEach(k0 => {
 
@@ -23,15 +24,10 @@ fetch("./data.json")
 
         tables += `
 <section>
-    <table>\
+    <table>
     <tr>
         <th colspan="3">${section_name}</th>
-    </tr>
-<!--<tr>
-        <th>Price</th>
-        <th></th>
-        <th>Note</th>
-    </tr>-->
+    </tr>\
 `;
 
         data[k0].list.forEach((v1, k1, arr) => {
@@ -40,9 +36,10 @@ fetch("./data.json")
 
             var title = list_item.title;
             var href  = list_item.href ? `<a href="${list_item.href}" title="${title}" target="_blank">${title}</a>` : `${title}` ;
-            var price  = list_item.price ? `${list_item.price}` : `` ;
+            var price  = list_item.price ? `$${list_item.price}` : `` ;
             var note  = list_item.note ? `${list_item.note}` : `` ;
 
+            total_price += list_item.price ?? 0;
 
             tables += `
     <tr>
@@ -56,7 +53,7 @@ fetch("./data.json")
 
         tables += `
 </table>
-</section>
+</section>\
 `;
 
     });
@@ -68,6 +65,8 @@ fetch("./data.json")
 <div id="outer_container">
 
 <h2>Homestead Item List</h2>
+
+<p>$${total_price}<br><br></p>
 
 ${tables}
 

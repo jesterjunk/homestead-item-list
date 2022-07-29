@@ -66,6 +66,17 @@
             }
         ]
     },
+    "Water Storage": {
+        "section name": "Water Storage",
+        "list": [
+            {
+                "title": "5 Gallon Water Jugs"
+            },
+            {
+                "title": "55 Gallon Plastic Drum"
+            }
+        ]
+    },
     "Tools": {
         "section name": "Tools",
         "list": [
@@ -118,12 +129,6 @@
             {
                 "title": "Triangular Bandage - 100% Cotton - 40\"x40\"x56\"",
                 "href": "https://www.amazon.com/dp/B0791HZLWC"
-            },
-            {
-                "title": "5 Gallon Water Jugs"
-            },
-            {
-                "title": "55 Gallon Plastic Drum"
             },
             {
                 "title": "Internet"

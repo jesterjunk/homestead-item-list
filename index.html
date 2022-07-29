@@ -9,63 +9,66 @@
 
 
 <script type="module">
-import data from './data.json' assert {type: 'json'};
+fetch("./data.json")
+    .then((res) => res.json())
+    .then((data) => {
 
-var lists = "";
+    var lists = "";
 
-Object.keys(data).forEach(k0 => {
+    Object.keys(data).forEach(k0 => {
 
-    var section_name = data[k0]["section name"];
-    var list         = data[k0].list;
+        var section_name = data[k0]["section name"];
+        var list         = data[k0].list;
 
-    lists += `
+        lists += `
 <section>
     <h4>${section_name}</h4>
     <ul>\
 `;
 
-    data[k0].list.forEach((v1, k1, arr) => {
+        data[k0].list.forEach((v1, k1, arr) => {
 
-        var list_item = list[k1]
+            var list_item = list[k1]
 
-        var title = list_item.title;
-        var href  = list_item.href;
+            var title = list_item.title;
+            var href  = list_item.href;
 
-        if (href)
-        {
-            lists += `
+            if (href)
+            {
+                lists += `
         <li><a href="${href}" title="${title}" target="_blank">${title}</a></li>\
 `;
-        }
-        else {
-            lists += `
+            }
+            else {
+                lists += `
         <li>${title}</li>\
 `;
-        }
-    });
+            }
+        });
 
-    lists += `
+        lists += `
 </ul>
 </section>
 `;
 
-});
+    });
 
 
     var innerhtml = document.body.innerHTML;
 
     document.body.innerHTML = `
-    <div id="outer_container">
+<div id="outer_container">
 
-    <h2>Homestead Item List</h2>
+<h2>Homestead Item List</h2>
 
-    ${lists}
+${lists}
 
-    </div>
+</div>
 
-    ${innerhtml}
+${innerhtml}
 `;
 
+});
 
 </script>
 

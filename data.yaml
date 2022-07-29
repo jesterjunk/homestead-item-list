@@ -1,9 +1,9 @@
 ---
 Transportation and Shelter:
 
-  section name: Transportation and Shelter
+    section name: Transportation and Shelter
 
-  list:
+    list:
 
     - title: Car
 
@@ -12,9 +12,9 @@ Transportation and Shelter:
 
 Sustenance:
 
-  section name: Sustenance
+    section name: Sustenance
 
-  list:
+    list:
 
     - title: Broth Cubes
 
@@ -33,9 +33,9 @@ Sustenance:
 
 Lavatory:
 
-  section name: Lavatory
+    section name: Lavatory
 
-  list:
+    list:
 
     - title: Portable Toilet
       href: https://www.amazon.com/dp/B06XGN67XS/
@@ -54,9 +54,9 @@ Lavatory:
 
 Electricity:
 
-  section name: Electricity
+    section name: Electricity
 
-  list:
+    list:
 
     - title: Portable Electric Power - 500 Watts
 
@@ -65,9 +65,9 @@ Electricity:
 
 Water Storage:
 
-  section name: Water Storage
+    section name: Water Storage
 
-  list:
+    list:
 
     - title: 5 Gallon Water Jugs
 
@@ -76,9 +76,9 @@ Water Storage:
 
 Tools:
 
-  section name: Tools
+    section name: Tools
 
-  list:
+    list:
 
     - title: Ferro Rod
 
@@ -99,9 +99,9 @@ Tools:
 
 Building Materials:
 
-  section name: Building Materials
+    section name: Building Materials
 
-  list:
+    list:
 
     - title: Plastic and Tarps
 
@@ -114,9 +114,9 @@ Building Materials:
 
 Other:
 
-  section name: Other
+    section name: Other
 
-  list:
+    list:
 
     - title: Triangular Bandage
       href: https://www.amazon.com/dp/B0791HZLWC

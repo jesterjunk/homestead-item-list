@@ -1,0 +1,126 @@
+{
+    "Transportation and Shelter": {
+        "section name": "Transportation and Shelter",
+        "list": [
+            {
+                "title": "Car"
+            },
+            {
+                "title": "Tiny Home"
+            }
+        ]
+    },
+    "Sustenance": {
+        "section name": "Sustenance",
+        "list": [
+            {
+                "title": "Broth Cubes"
+            },
+            {
+                "title": "Ramon Noodles"
+            },
+            {
+                "title": "Dry Rice"
+            },
+            {
+                "title": "Salt and Pepper"
+            },
+            {
+                "title": "Barrels for water collecting"
+            },
+            {
+                "title": "Greenhouse - Crops"
+            },
+            {
+                "title": "Seeds - Crops"
+            }
+        ]
+    },
+    "Lavatory": {
+        "section name": "Lavatory",
+        "list": [
+            {
+                "title": "Portable Toilet",
+                "href": "https://www.amazon.com/dp/B06XGN67XS/"
+            },
+            {
+                "title": "Toilet Paper"
+            }
+        ]
+    },
+    "Electricity": {
+        "section name": "Electricity",
+        "list": [
+            {
+                "title": "Portable Electric Power - 500 Watts"
+            },
+            {
+                "title": "Portable Solar Power - 100 Watts"
+            }
+        ]
+    },
+    "Tools": {
+        "section name": "Tools",
+        "list": [
+            {
+                "title": "Ferro Rod"
+            },
+            {
+                "title": "Hunting Knife"
+            },
+            {
+                "title": "Wheel Barrow"
+            },
+            {
+                "title": "Shovel"
+            },
+            {
+                "title": "Hatchet"
+            },
+            {
+                "title": "Rake"
+            },
+            {
+                "title": "Spade"
+            },
+            {
+                "title": "Work Gloves"
+            }
+        ]
+    },
+    "Building Materials": {
+        "section name": "Building Materials",
+        "list": [
+            {
+                "title": "Plastic and Tarps"
+            },
+            {
+                "title": "PVC Pipes"
+            },
+            {
+                "title": "Lumber - 2x4 / 4x4"
+            },
+            {
+                "title": "Cement"
+            }
+        ]
+    },
+    "Other": {
+        "section name": "Other",
+        "list": [
+            {
+                "title": "Triangular Bandage - 100% Cotton - 40\"x40\"x56\"",
+                "href": "https://www.amazon.com/dp/B0791HZLWC"
+            },
+            {
+                "title": "5 Gallon Water Jugs"
+            },
+            {
+                "title": "55 Gallon Plastic Drum"
+            },
+            {
+                "title": "Internet"
+            }
+        ]
+    }
+}

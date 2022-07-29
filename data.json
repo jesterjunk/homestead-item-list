@@ -41,7 +41,9 @@
         "list": [
             {
                 "title": "Portable Toilet",
-                "href": "https://www.amazon.com/dp/B06XGN67XS/"
+                "href": "https://www.amazon.com/dp/B06XGN67XS/",
+                "price": "$138.98",
+                "note": "3-gallon freshwater holding tank plus a 5-gallon waste water holding tank"
             },
             {
                 "title": "Toilet Paper"
@@ -51,7 +53,9 @@
             },
             {
                 "title": "Portable Shower",
-                "href": "https://www.amazon.com/dp/B09WHK1SPD"
+                "href": "https://www.amazon.com/dp/B085CBZCZ7",
+                "price": "$12.99",
+                "note": "This has a black 5 gallon bag which warms water by absorbing heat from sunlight."
             }
         ]
     },
@@ -127,8 +131,11 @@
         "section name": "Other",
         "list": [
             {
-                "title": "Triangular Bandage - 100% Cotton - 40\"x40\"x56\"",
-                "href": "https://www.amazon.com/dp/B0791HZLWC"
+                "title": "Triangular Bandage",
+                "href": "https://www.amazon.com/dp/B0791HZLWC",
+                "price": "$9.99",
+                "qty": 1,
+                "note": "12 pack - 100% Cotton - 40\"x40\"x56\"<br><br>Charcloth - Arm Sling - Bandana"
             },
             {
                 "title": "Internet"

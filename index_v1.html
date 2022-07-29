@@ -14,24 +14,17 @@ fetch("./data.json")
     .then((res) => res.json())
     .then((data) => {
 
-    var tables = "";
+    var lists = "";
 
     Object.keys(data).forEach(k0 => {
 
         var section_name = data[k0]["section name"];
         var list         = data[k0].list;
 
-        tables += `
+        lists += `
 <section>
-    <table>\
-    <tr>
-        <th colspan="3">${section_name}</th>
-    </tr>
-<!--<tr>
-        <th>Price</th>
-        <th></th>
-        <th>Note</th>
-    </tr>-->
+    <h4>${section_name}</h4>
+    <ul>\
 `;
 
         data[k0].list.forEach((v1, k1, arr) => {
@@ -39,23 +32,23 @@ fetch("./data.json")
             var list_item = list[k1]
 
             var title = list_item.title;
-            var href  = list_item.href ? `<a href="${list_item.href}" title="${title}" target="_blank">${title}</a>` : `${title}` ;
-            var price  = list_item.price ? `${list_item.price}` : `` ;
-            var note  = list_item.note ? `${list_item.note}` : `` ;
+            var href  = list_item.href;
 
-
-            tables += `
-    <tr>
-        <td class="price">${price}</td>
-        <td class="title_url">${href}</td>
-        <td class="notes">${note}</td>
-    </tr>\
+            if (href)
+            {
+                lists += `
+        <li><a href="${href}" title="${title}" target="_blank">${title}</a></li>\
 `;
-
+            }
+            else {
+                lists += `
+        <li>${title}</li>\
+`;
+            }
         });
 
-        tables += `
-</table>
+        lists += `
+</ul>
 </section>
 `;
 
@@ -69,7 +62,7 @@ fetch("./data.json")
 
 <h2>Homestead Item List</h2>
 
-${tables}
+${lists}
 
 </div>
 

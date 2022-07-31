@@ -10,8 +10,7 @@
 
 <script src="js-yaml.min.js"></script>
 
-<script type="module">
-
+<script>
 Promise.all([
     fetch("./data.yaml").then(x => x.text())
 ]).then(([yaml]) => {
